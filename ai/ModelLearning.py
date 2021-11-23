@@ -40,7 +40,7 @@ from tensorflow.keras import metrics
 
 # ~.txt 파일에서 데이터를 불러오는 method
 def read_data(filename):
-    with open(filename, 'r', encoding='UFT-8') as f:
+    with open(filename, 'r', encoding='UTF-8') as f:
         data = [line.split('\t') for line in f.read().splitlines()]
         data = data[1:] # 제목열 제외
     return data
